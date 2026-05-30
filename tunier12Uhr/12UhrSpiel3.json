@@ -1,0 +1,2360 @@
+{
+  "size": [
+    10,
+    10
+  ],
+  "snakes": [
+    {
+      "body": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ]
+      ]
+    },
+    {
+      "body": [
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          5
+        ]
+      ]
+    },
+    {
+      "body": [
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          2
+        ]
+      ]
+    },
+    {
+      "body": [
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          8
+        ]
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "AddBot": "Bot-3"
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "classpathology",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "StopGame": []
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Hacklachapelle",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "mvm",
+        "SOUTH"
+      ]
+    }
+  ]
+}

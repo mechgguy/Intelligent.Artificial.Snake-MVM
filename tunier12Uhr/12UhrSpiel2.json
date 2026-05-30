@@ -1,0 +1,4253 @@
+{
+  "size": [
+    10,
+    10
+  ],
+  "snakes": [
+    {
+      "body": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ]
+      ]
+    },
+    {
+      "body": [
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          5
+        ]
+      ]
+    },
+    {
+      "body": [
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          2
+        ]
+      ]
+    },
+    {
+      "body": [
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          8
+        ]
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "StartGame": []
+    },
+    {
+      "StopGame": []
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "aos",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "AddBot": "Bot-3"
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "StartGame": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "aos",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "aos",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "aos",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "aos",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Ouroboros",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "aos",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "aos",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "aos",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "aos",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "SOUTH"
+      ]
+    },
+    {
+      "StopGame": []
+    },
+    {
+      "OrientSnake": [
+        "viber",
+        "WEST"
+      ]
+    }
+  ]
+}

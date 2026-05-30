@@ -1,0 +1,3923 @@
+{
+  "size": [
+    10,
+    10
+  ],
+  "snakes": [
+    {
+      "body": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          5
+        ]
+      ]
+    },
+    {
+      "body": [
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          5
+        ]
+      ]
+    },
+    {
+      "body": [
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          2
+        ]
+      ]
+    },
+    {
+      "body": [
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          8
+        ]
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "Titanaboa",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "SOUTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "NORTH"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "WEST"
+      ]
+    },
+    {
+      "PowerupTick": []
+    },
+    {
+      "MovementTick": []
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "StopGame": []
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "SOUTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "termineaters",
+        "NORTH"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "itestrasse",
+        "EAST"
+      ]
+    },
+    {
+      "OrientSnake": [
+        "teamea",
+        "WEST"
+      ]
+    }
+  ]
+}
