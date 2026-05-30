@@ -1,0 +1,2 @@
+record ActivateItemRequest(String item) {
+}
