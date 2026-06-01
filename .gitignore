@@ -1,3 +1,153 @@
-*pycache*
 *.pdf
 .idea/
+
+*.zip
+*.lst
+
+# ==============================================================================
+# OS Generated Files
+# ==============================================================================
+.DS_Store
+Thumbs.db
+*.log
+
+# ==============================================================================
+# Python Tools & Environments
+# ==============================================================================
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+pyenv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+bin/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# pytest and coverage
+.pytest_cache/
+.htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# ==============================================================================
+# Java & Build Automation (Maven / Gradle)
+# ==============================================================================
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools Package (Sun MQ)
+.mtj.tmp/
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven specific
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.nextVal
+pom.xml.warn
+pom.xml.used
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# Note: If using Maven Wrapper, uncomment the next line to ignore its jar
+# .mvn/wrapper/maven-wrapper.jar
+
+# Gradle specific
+.gradle/
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Cache managed by Hudson / Jenkins / GoCD
+.crunch/
+
+# ==============================================================================
+# IDEs: JetBrains (PyCharm / IntelliJ) & VS Code
+# ==============================================================================
+# JetBrains (PyCharm, IntelliJ, etc.)
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# VS Code
+.vscode/
+# Note: If you want to share specific VS Code settings or tasks with your team,
+# comment out .vscode/ above and uncomment the specific items below:
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+.history/
+*.code-workspace
+
+# ==============================================================================
+# Secrets & Environment Variables (Crucial Security)
+# ==============================================================================
+.env
+.env.local
+.env.*.local
+$env
+.secrets
+
+**/target/
+*.lst
+*.class
+
+# Game logs, level replays, and strategy JSON dumps
+*.json
+
+# Compiled binaries and game visualization assets
+release/server
+release/static_gui/
+static_gui/
+
+# Quick scratchpad files and level-specific logic copies
+*alt*.java
+*lvl*.java
+*lel*.java
+*neu*.java
+*old*.py
+SnakeJavaClient/0

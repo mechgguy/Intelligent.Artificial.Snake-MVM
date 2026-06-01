@@ -1,6 +1,7 @@
 import argparse
 import time
 import random
+import requests  # Added for direct network override
 from collections import deque
 
 from api import SnakeFieldAPI
@@ -48,15 +49,12 @@ def find_bfs_move(my_head, dangerous_cells, grid_size, target_apples):
     return None
 
 def count_reachable_space(start_pos, dangerous_cells, grid_size, max_depth=40):
-    """
-    Optimized Flood Fill lookahead. 
-    Pre-seeded with dangerous cells for high-speed calculation to avoid server timeout.
-    """
+    """Optimized Flood Fill lookahead with complete torus wrap-around safety constraints."""
     width, height = grid_size
     directions = ["NORTH", "SOUTH", "EAST", "WEST"]
     
     queue = deque([start_pos])
-    visited = set(dangerous_cells)  # Pre-seed visited with obstacles for faster lookup
+    visited = set(dangerous_cells)
     if start_pos in visited:
         return 0
     visited.add(start_pos)
@@ -83,12 +81,17 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     team_name = args.team_name
-    base_url = args.base_url
+    base_url = args.base_url.rstrip('/')
     game_name = args.game_name
     password = args.password
 
     currentDirection: Direction = "EAST"
     api = SnakeFieldAPI(base_url, team_name, game_name, password)
+
+    # Construct the direct fallback endpoint URL
+    direction_url = f"{base_url}/games/{game_name}/snake/direction"
+    headers = {"Content-Type": "application/json"}
+    auth_payload = {"team_name": team_name, "password": password}
 
     print(f"Connecting dynamic bot '{team_name}' to lobby '{game_name}'...")
 
@@ -97,6 +100,8 @@ if __name__ == "__main__":
         try:
             # 1. Fetch current tick game state map
             field = api.get_field()
+            grid_size = field.size
+            width, height = grid_size
             
             # --- ROBUST TEAM IDENTIFICATION FALLBACK ---
             my_snake = field.snakes.get(team_name)
@@ -115,40 +120,38 @@ if __name__ == "__main__":
             
             if not my_snake or not my_snake.alive:
                 print("Snake waiting for round countdown / spawn context...")
-                time.sleep(1.0)
+                time.sleep(0.5)
                 continue
 
-            my_head = my_snake.body[0]
+            my_head = (my_snake.body[0][0] % width, my_snake.body[0][1] % height)
             current_length = len(my_snake.body)
-            grid_size = field.size
             directions_list = ["NORTH", "SOUTH", "EAST", "WEST"]
 
-            # 2. PERMANENT INDESTRUCTIBLE OBSTACLE CAPTURE
-            permanent_obstacles = set()
+            # 2. OBJECT MATRIX MAPPING
+            dangerous_cells = set()
             
-            # Hard-lock ALL snake coordinates on the field right now (Living and Dead Grey remains)
+            # Rule A: Treat ALL snake bodies as solid walls
             for s_name, s_info in field.snakes.items():
                 for block in s_info.body:
-                    permanent_obstacles.add(block)
+                    dangerous_cells.add((block[0] % width, block[1] % height))
 
-            # Initialize our active danger grid with these permanent physical boundaries
-            dangerous_cells = set(permanent_obstacles)
+            good_apples = set(field.apples)
+            bad_apples = set(field.bad_apples)
 
-            # Rule B: Bad apples shrink us. If length == 1, eating one causes instant death!
+            # Rule B: Bad apples shrink us. If length == 1, eating one causes an instant crash!
             if current_length == 1:
-                for bad_apple in field.bad_apples:
+                for bad_apple in bad_apples:
                     dangerous_cells.add(bad_apple)
 
-            # Rule C: ACTIVE HEAD-ON COLLISION DEFENSE
-            # Block positions that an enemy head can reach on the exact same frame
+            # Rule C: HEAD-ON COLLISION DEFENSE
             for s_name, s_info in field.snakes.items():
                 if s_name != my_found_key and s_info.alive:
-                    enemy_head = s_info.body[0]
+                    enemy_head = (s_info.body[0][0] % width, s_info.body[0][1] % height)
                     for enemy_move in directions_list:
                         predicted_enemy_cell = get_target_coord(enemy_head, enemy_move, grid_size)
                         dangerous_cells.add(predicted_enemy_cell)
 
-            # 3. Filter safe immediate moves (and exclude the immediate backward 180 direction)
+            # 3. Filter safe immediate moves
             all_moves = get_directions_as_list()
             forbidden_reverse = get_opposite_direction(currentDirection)
             
@@ -160,13 +163,14 @@ if __name__ == "__main__":
                 if next_pos not in dangerous_cells:
                     safe_moves.append(move)
 
-            # --- GUARANTEED PANIC LAYER ---
-            # If predictive head bubbles completely trap us, clear predictions.
-            # Physical boundaries (ALL snake bodies & lethal bad items) are safely restored from snapshots.
+            # --- PANIC LAYER ---
             if not safe_moves:
-                dangerous_cells = set(permanent_obstacles)
+                dangerous_cells.clear()
+                for s_name, s_info in field.snakes.items():
+                    for block in s_info.body:
+                        dangerous_cells.add((block[0] % width, block[1] % height))
                 if current_length == 1:
-                    for bad_apple in field.bad_apples:
+                    for bad_apple in bad_apples:
                         dangerous_cells.add(bad_apple)
                 
                 safe_moves = []
@@ -191,9 +195,9 @@ if __name__ == "__main__":
                     
                     for s_name, s_info in field.snakes.items():
                         if s_name != my_found_key and s_info.alive:
-                            enemy_head = s_info.body[0]
-                            dx = min(abs(hypothetical_spawn_step[0] - enemy_head[0]), grid_size[0] - abs(hypothetical_spawn_step[0] - enemy_head[0]))
-                            dy = min(abs(hypothetical_spawn_step[1] - enemy_head[1]), grid_size[1] - abs(hypothetical_spawn_step[1] - enemy_head[1]))
+                            enemy_head = (s_info.body[0][0] % width, s_info.body[0][1] % height)
+                            dx = min(abs(hypothetical_spawn_step[0] - enemy_head[0]), width - abs(hypothetical_spawn_step[0] - enemy_head[0]))
+                            dy = min(abs(hypothetical_spawn_step[1] - enemy_head[1]), height - abs(hypothetical_spawn_step[1] - enemy_head[1]))
                             total_enemy_distance += (dx + dy)
                     
                     if total_enemy_distance > max_distance_from_enemies:
@@ -206,16 +210,13 @@ if __name__ == "__main__":
             # HUNTER MODE ENGINE vs SURVIVAL MODE ENGINE
             if not chosen_move:
                 if current_length < LENGTH_THRESHOLD:
-                    good_apples = set(field.apples)
-                    bad_apples = set(field.bad_apples) if current_length > 1 else set()
-                    
                     if safe_moves:
                         if good_apples:
                             chosen_move = find_bfs_move(my_head, dangerous_cells, grid_size, good_apples)
-                        if not chosen_move and bad_apples:
+                        if not chosen_move and bad_apples and current_length > 1:
                             chosen_move = find_bfs_move(my_head, dangerous_cells, grid_size, bad_apples)
                 else:
-                    print(f"[SURVIVAL MODE] Optimized space loop tracking at size {current_length}.")
+                    print(f"[SURVIVAL MODE] Fast space loop optimization at size {current_length}.")
 
             # 5. Flood Fill Space Fallback Evaluation
             if not chosen_move and safe_moves:
@@ -240,16 +241,29 @@ if __name__ == "__main__":
                 currentDirection = chosen_move
             elif safe_moves:
                 currentDirection = safe_moves[0]
-            else:
-                print("[CRITICAL PANIC] No safe options left. Maintaining trajectory.")
 
-            api.set_direction(currentDirection)
-            
-            # Dynamic sleep to keep pace perfectly balanced with the server tick cycle
+            # --- CRITICAL FIX: DIRECT HTTP POST OVERRIDE ---
+            # Send direction payload straight via requests to bypass client bugs
+            data_payload = {
+                "team_name": team_name,
+                "password": password,
+                "direction": currentDirection
+            }
+            try:
+                # Direct fire-and-forget timeout constraint
+                requests.post(direction_url, json=data_payload, headers=headers, timeout=0.08)
+            except Exception:
+                # Fallback to standard internal client method if network pipe hits local hitch
+                api.set_direction(currentDirection)
+
+            # Optimized loop pacing to adapt cleanly to server frame budgets
             elapsed = time.time() - start_tick_time
-            sleep_time = max(0.05, 0.4 - elapsed)
+            sleep_time = max(0.005, 0.2 - elapsed)
             time.sleep(sleep_time)
 
         except Exception as e:
-            print(f"Synchronizing turn cycle... (Status Details: {e})")
-            time.sleep(0.5)
+            if "429" in str(e):
+                time.sleep(0.05)
+            else:
+                print(f"Synchronizing turn cycle... (Status Details: {e})")
+                time.sleep(0.02)

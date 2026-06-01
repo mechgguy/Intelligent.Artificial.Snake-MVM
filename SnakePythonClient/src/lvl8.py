@@ -24,8 +24,11 @@ def get_opposite_direction(direction):
     mapping = {"NORTH": "SOUTH", "SOUTH": "NORTH", "EAST": "WEST", "WEST": "EAST"}
     return mapping.get(direction, "WEST")
 
-def find_bfs_move(my_head, dangerous_cells, grid_size, target_apples):
+def find_bfs_move(my_head, dangerous_cells, grid_size, target_items):
     """Finds the first directional step towards the closest item target using BFS."""
+    if not target_items:
+        return None
+        
     width, height = grid_size
     directions = ["NORTH", "SOUTH", "EAST", "WEST"]
     
@@ -35,7 +38,7 @@ def find_bfs_move(my_head, dangerous_cells, grid_size, target_apples):
     while queue:
         curr_pos, path = queue.popleft()
         
-        if curr_pos in target_apples:
+        if curr_pos in target_items:
             if path:
                 return path[0]
 
@@ -48,10 +51,7 @@ def find_bfs_move(my_head, dangerous_cells, grid_size, target_apples):
     return None
 
 def count_reachable_space(start_pos, dangerous_cells, grid_size, max_depth=40):
-    """
-    Optimized Flood Fill lookahead. 
-    Pre-seeded with dangerous cells for high-speed calculation to avoid server timeout.
-    """
+    """Optimized Flood Fill lookahead to prevent computation timeouts."""
     width, height = grid_size
     directions = ["NORTH", "SOUTH", "EAST", "WEST"]
     
@@ -90,7 +90,12 @@ if __name__ == "__main__":
     currentDirection: Direction = "EAST"
     api = SnakeFieldAPI(base_url, team_name, game_name, password)
 
+    api.set_direction(currentDirection)
+
     print(f"Connecting dynamic bot '{team_name}' to lobby '{game_name}'...")
+
+    # Define exact cross center traps based on JSON layout to safeguard target paths
+    cross_traps = {(4, 4), (10, 4), (4, 10), (10, 10)}
 
     while True:
         start_tick_time = time.time()
@@ -119,38 +124,80 @@ if __name__ == "__main__":
                 continue
 
             my_head = my_snake.body[0]
+            # Normalize head tuple representation
+            my_head = (my_head.x, my_head.y) if hasattr(my_head, 'x') else tuple(my_head)
+            
             current_length = len(my_snake.body)
             grid_size = field.size
             directions_list = ["NORTH", "SOUTH", "EAST", "WEST"]
 
-            # 2. PERMANENT INDESTRUCTIBLE OBSTACLE CAPTURE
-            permanent_obstacles = set()
+            # 2. OBJECT MATRIX MAPPING
+            dangerous_cells = set()
+            bad_apples_set = set()
+            good_apples = set()
+            speed_boosts = set()
+            swords = set()
+            stars = set()
+
+            # Dynamic parsing for separate lists vs unified item lists
+            if hasattr(field, 'items') and field.items:
+                for item in field.items:
+                    itype = item.type.lower()
+                    ipos = (item.position.x, item.position.y) if hasattr(item.position, 'x') else tuple(item.position)
+                    
+                    if "bad" in itype:
+                        bad_apples_set.add(ipos)
+                    elif "speed" in itype or "boost" in itype or "turbo" in itype:
+                        speed_boosts.add(ipos)
+                    elif "sword" in itype or "schwert" in itype:
+                        swords.add(ipos)
+                    elif "star" in itype or "stern" in itype:
+                        stars.add(ipos)
+                    elif "apple" in itype or "food" in itype:
+                        good_apples.add(ipos)
+            else:
+                # Direct fallback checking individual data frame properties
+                if hasattr(field, 'bad_apples') and field.bad_apples: bad_apples_set = set(tuple(p) for p in field.bad_apples)
+                if hasattr(field, 'apples') and field.apples: good_apples = set(tuple(p) for p in field.apples)
+                if hasattr(field, 'speed_boosts') and field.speed_boosts: speed_boosts = set(tuple(p) for p in field.speed_boosts)
+                if hasattr(field, 'swords') and field.swords: swords = set(tuple(p) for p in field.swords)
+                if hasattr(field, 'stars') and field.stars: stars = set(tuple(p) for p in field.stars)
             
-            # Hard-lock ALL snake coordinates on the field right now (Living and Dead Grey remains)
+            # Rule A: Treat ALL snake bodies as solid walls
             for s_name, s_info in field.snakes.items():
                 for block in s_info.body:
-                    permanent_obstacles.add(block)
+                    block_pos = (block.x, block.y) if hasattr(block, 'x') else tuple(block)
+                    dangerous_cells.add(block_pos)
 
-            # Initialize our active danger grid with these permanent physical boundaries
-            dangerous_cells = set(permanent_obstacles)
+            # Rule B: Bad Apple Filtering (Dynamic mapping protection)
+            for bad_apple in bad_apples_set:
+                dangerous_cells.add(bad_apple)
 
-            # Rule B: Bad apples shrink us. If length == 1, eating one causes instant death!
-            if current_length == 1:
-                for bad_apple in field.bad_apples:
-                    dangerous_cells.add(bad_apple)
-
-            # Rule C: ACTIVE HEAD-ON COLLISION DEFENSE
-            # Block positions that an enemy head can reach on the exact same frame
+            # Rule C: HEAD-ON COLLISION DEFENSE
             for s_name, s_info in field.snakes.items():
                 if s_name != my_found_key and s_info.alive:
-                    enemy_head = s_info.body[0]
-                    for enemy_move in directions_list:
-                        predicted_enemy_cell = get_target_coord(enemy_head, enemy_move, grid_size)
-                        dangerous_cells.add(predicted_enemy_cell)
+                    e_head = s_info.body[0]
+                    enemy_head = (e_head.x, e_head.y) if hasattr(e_head, 'x') else tuple(e_head)
+                    if enemy_head != my_head:
+                        for enemy_move in directions_list:
+                            predicted_enemy_cell = get_target_coord(enemy_head, enemy_move, grid_size)
+                            dangerous_cells.add(predicted_enemy_cell)
 
-            # 3. Filter safe immediate moves (and exclude the immediate backward 180 direction)
+            # 3. Filter safe immediate moves
             all_moves = get_directions_as_list()
-            forbidden_reverse = get_opposite_direction(currentDirection)
+            
+            # Safe initialization step: Overlapping initial coordinates don't crash 180 trajectory tracking
+            if len(my_snake.body) > 1:
+                b0 = my_snake.body[0]
+                b1 = my_snake.body[1]
+                pos0 = (b0.x, b0.y) if hasattr(b0, 'x') else tuple(b0)
+                pos1 = (b1.x, b1.y) if hasattr(b1, 'x') else tuple(b1)
+                if pos0 == pos1:
+                    forbidden_reverse = None
+                else:
+                    forbidden_reverse = get_opposite_direction(currentDirection)
+            else:
+                forbidden_reverse = get_opposite_direction(currentDirection)
             
             safe_moves = []
             for move in all_moves:
@@ -160,13 +207,15 @@ if __name__ == "__main__":
                 if next_pos not in dangerous_cells:
                     safe_moves.append(move)
 
-            # --- GUARANTEED PANIC LAYER ---
-            # If predictive head bubbles completely trap us, clear predictions.
-            # Physical boundaries (ALL snake bodies & lethal bad items) are safely restored from snapshots.
+            # --- PANIC LAYER ---
             if not safe_moves:
-                dangerous_cells = set(permanent_obstacles)
+                dangerous_cells.clear()
+                for s_name, s_info in field.snakes.items():
+                    for block in s_info.body:
+                        block_pos = (block.x, block.y) if hasattr(block, 'x') else tuple(block)
+                        dangerous_cells.add(block_pos)
                 if current_length == 1:
-                    for bad_apple in field.bad_apples:
+                    for bad_apple in bad_apples_set:
                         dangerous_cells.add(bad_apple)
                 
                 safe_moves = []
@@ -191,7 +240,8 @@ if __name__ == "__main__":
                     
                     for s_name, s_info in field.snakes.items():
                         if s_name != my_found_key and s_info.alive:
-                            enemy_head = s_info.body[0]
+                            e_head = s_info.body[0]
+                            enemy_head = (e_head.x, e_head.y) if hasattr(e_head, 'x') else tuple(e_head)
                             dx = min(abs(hypothetical_spawn_step[0] - enemy_head[0]), grid_size[0] - abs(hypothetical_spawn_step[0] - enemy_head[0]))
                             dy = min(abs(hypothetical_spawn_step[1] - enemy_head[1]), grid_size[1] - abs(hypothetical_spawn_step[1] - enemy_head[1]))
                             total_enemy_distance += (dx + dy)
@@ -206,16 +256,21 @@ if __name__ == "__main__":
             # HUNTER MODE ENGINE vs SURVIVAL MODE ENGINE
             if not chosen_move:
                 if current_length < LENGTH_THRESHOLD:
-                    good_apples = set(field.apples)
-                    bad_apples = set(field.bad_apples) if current_length > 1 else set()
-                    
+                    # Filter out enclosed Swords trapped inside the Bad Apples structure
+                    accessible_swords = swords - cross_traps
+
                     if safe_moves:
-                        if good_apples:
+                        # Priority Tiers: 1. Stars -> 2. Speed Boosts -> 3. Open Swords -> 4. Apples
+                        if stars:
+                            chosen_move = find_bfs_move(my_head, dangerous_cells, grid_size, stars)
+                        if not chosen_move and speed_boosts:
+                            chosen_move = find_bfs_move(my_head, dangerous_cells, grid_size, speed_boosts)
+                        if not chosen_move and accessible_swords:
+                            chosen_move = find_bfs_move(my_head, dangerous_cells, grid_size, accessible_swords)
+                        if not chosen_move and good_apples:
                             chosen_move = find_bfs_move(my_head, dangerous_cells, grid_size, good_apples)
-                        if not chosen_move and bad_apples:
-                            chosen_move = find_bfs_move(my_head, dangerous_cells, grid_size, bad_apples)
                 else:
-                    print(f"[SURVIVAL MODE] Optimized space loop tracking at size {current_length}.")
+                    print(f"[SURVIVAL MODE] Space loop optimization active at size {current_length}.")
 
             # 5. Flood Fill Space Fallback Evaluation
             if not chosen_move and safe_moves:
@@ -241,11 +296,11 @@ if __name__ == "__main__":
             elif safe_moves:
                 currentDirection = safe_moves[0]
             else:
-                print("[CRITICAL PANIC] No safe options left. Maintaining trajectory.")
+                print("[CRITICAL PANIC] Trajectory maintained.")
 
             api.set_direction(currentDirection)
             
-            # Dynamic sleep to keep pace perfectly balanced with the server tick cycle
+            # Dynamic sleep loop adjustment to server execution timeframe
             elapsed = time.time() - start_tick_time
             sleep_time = max(0.05, 0.4 - elapsed)
             time.sleep(sleep_time)

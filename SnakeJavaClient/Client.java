@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -7,8 +6,19 @@ import java.util.Queue;
 import java.util.Set;
 
 class Client {
+
     private final HttpSnakeFieldAPI api;
     private final String teamName;
+
+    private static final int ATTACK_ITEM_TICKS = 4;
+    private int attackItemTicks = 0;
+
+    private boolean attackPreparedForNextTick = false;
+    private boolean alreadyCutWithAttackItem = false;
+
+    private static final int MAX_EXTRA_LENGTH = 5;
+    private int startLength = -1;
+    private boolean wantsBadApple = false;
 
     public Client(String serverUrl, String teamName, String gameName, String password) {
         this.api = new HttpSnakeFieldAPI(serverUrl, teamName, gameName, password);
@@ -17,384 +27,618 @@ class Client {
 
     public void run() {
         try {
-            Direction currentDirection = Direction.EAST;
-
-            api.setDirection(currentDirection);
+            api.setDirection(Direction.EAST);
 
             while (true) {
-                try {
-                    Thread.sleep(500);
-                } catch (InterruptedException e) {
-                    Thread.currentThread().interrupt();
-                    break;
-                }
+                // Configured for 1 tick per second map speed
+                Thread.sleep(1000);
 
                 GameField field = api.getField();
+                if (field == null) continue;
 
-                Direction nextDirection = decideDirection(field, currentDirection);
+                Snake mySnake = field.snakesPerTeamName().get(teamName);
 
-                currentDirection = nextDirection;
+                if (mySnake != null && mySnake.body() != null && !mySnake.body().isEmpty()) {
+                    updateLengthMode(mySnake);
 
-                api.setDirection(currentDirection);
+                    if (attackPreparedForNextTick) {
+                        attackItemTicks = ATTACK_ITEM_TICKS;
+                        attackPreparedForNextTick = false;
+                        alreadyCutWithAttackItem = false;
+                        System.out.println("⚔️ ATTACK POWERUP ACTIVATED!");
+                    }
 
-                System.out.println("Neue Richtung: " + currentDirection);
+                    System.out.println("Length: " + mySnake.body().size());
+                    System.out.println("Inventory: " + mySnake.inventory());
+                }
+
+                Direction nextDirection = decideDirection(field);
+                api.setDirection(nextDirection);
+
+                if (attackItemTicks > 0) {
+                    attackItemTicks--;
+                    if (attackItemTicks == 0) {
+                        alreadyCutWithAttackItem = false;
+                    }
+                }
+
+                System.out.println("Heading: " + nextDirection);
+                System.out.println("--------------------------");
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    private Direction decideDirection(GameField field, Direction currentDirection) {
-        Snake mySnake = field.snakesPerTeamName().get(teamName);
+    private void updateLengthMode(Snake mySnake) {
+        int currentLength = mySnake.body().size();
+        if (startLength == -1) {
+            startLength = currentLength;
+        }
+        int maxAllowedLength = startLength + MAX_EXTRA_LENGTH;
+        wantsBadApple = currentLength >= maxAllowedLength;
+    }
 
+    private Direction decideDirection(GameField field) {
+        Snake mySnake = field.snakesPerTeamName().get(teamName);
         if (mySnake == null || mySnake.body() == null || mySnake.body().isEmpty()) {
-            return currentDirection;
+            return Direction.EAST;
         }
 
         Position myHead = mySnake.body().get(0);
+        Direction trueDir = getTrueDirection(mySnake, field.size());
+        boolean hasAttackPower = attackItemTicks > 0;
 
-        Set<Position> snakeBlockedPositions = getBlockedPositions(field);
-        Set<Position> badApplePositions = getBadApplePositions(field.items());
+        Set<Position> ownBody = getOwnBodyPositions(mySnake);
+        Set<Position> enemyBodies = getEnemyBodyPositions(field);
+        Set<Position> badApples = getBadApplePositions(field.items());
+        Set<Position> blocked = getBlockedPositions(field);
 
-        // Für Flood Fill zählen Bad Apples als blockiert,
-        // damit der Bot sie nicht freiwillig als guten Weg betrachtet.
-        Set<Position> blockedForFloodFill = new HashSet<>(snakeBlockedPositions);
-        blockedForFloodFill.addAll(badApplePositions);
+        // Active Emergency Shield & Escape Activations
+        executeAutomaticInventoryManagement(mySnake, myHead, field, blocked);
 
-        List<Direction> possibleDirections = new ArrayList<>();
-        possibleDirections.add(Direction.NORTH);
-        possibleDirections.add(Direction.EAST);
-        possibleDirections.add(Direction.SOUTH);
-        possibleDirections.add(Direction.WEST);
-
-        Direction bestNormalDirection = null;
-        int bestNormalScore = Integer.MIN_VALUE;
-
-        Direction bestWallDirection = null;
-        int bestWallScore = Integer.MIN_VALUE;
-
-        Direction emergencyBadAppleDirection = null;
-        int emergencyBadAppleScore = Integer.MIN_VALUE;
-
-        for (Direction direction : possibleDirections) {
-
-            if (isOpposite(currentDirection, direction)) {
-                continue;
-            }
-
-            Position rawNextPosition = moveWithoutWall(myHead, direction);
-            boolean goesThroughWall = !isInsideField(rawNextPosition, field.size());
-
-            Position nextPosition = wrapPosition(rawNextPosition, field.size());
-
-            // In Snake oder Leiche NIEMALS reinfahren.
-            if (snakeBlockedPositions.contains(nextPosition)) {
-                continue;
-            }
-
-            boolean isBadAppleField = badApplePositions.contains(nextPosition);
-
-            int score = 0;
-
-            int freeSpace = countReachableFreeFields(nextPosition, blockedForFloodFill, field.size());
-            score += freeSpace * 8;
-
-            if (freeSpace < mySnake.body().size() + 3) {
-                score -= 500;
-            }
-
-            Item nearestGoodItem = findNearestGoodItem(myHead, field.items());
-
-            if (nearestGoodItem != null) {
-                int distanceAfterMove = distanceWithWall(nextPosition, nearestGoodItem.position(), field.size());
-                score -= distanceAfterMove * 10;
-            }
-
-            int enemyDanger = enemyDangerScore(nextPosition, field.snakesPerTeamName(), field.size(), mySnake.body().size());
-            score -= enemyDanger * 60;
-
-            int badAppleDanger = badAppleDangerScore(nextPosition, badApplePositions, field.size());
-            score -= badAppleDanger * 80;
-
-            if (direction == currentDirection) {
-                score += 5;
-            }
-
-            /*
-             * WICHTIG:
-             * Bad Apple wird NICHT normal genommen.
-             * Es wird nur gespeichert als Notfallrichtung.
-             */
-            if (isBadAppleField) {
-                score -= 10000;
-
-                if (score > emergencyBadAppleScore) {
-                    emergencyBadAppleScore = score;
-                    emergencyBadAppleDirection = direction;
-                }
-
-                continue;
-            }
-
-            if (!goesThroughWall) {
-                if (score > bestNormalScore) {
-                    bestNormalScore = score;
-                    bestNormalDirection = direction;
-                }
-            } else {
-                score -= 40;
-
-                if (score > bestWallScore) {
-                    bestWallScore = score;
-                    bestWallDirection = direction;
-                }
-            }
-
-            System.out.println(
-                    "Richtung: " + direction
-                            + " | Ziel: " + nextPosition
-                            + " | Platz: " + freeSpace
-                            + " | Score: " + score
-                            + " | Wand: " + goesThroughWall
-                            + " | BadApple: " + isBadAppleField
+        if (!hasAttackPower && !attackPreparedForNextTick) {
+            Direction straightAttack = prepareAttackItemAndGoStraightIfEnemyInFront(
+                    mySnake, field, myHead, trueDir, ownBody, enemyBodies, badApples
             );
+            if (straightAttack != null) {
+                return straightAttack;
+            }
         }
 
-        // 1. Beste normale sichere Richtung
-        if (bestNormalDirection != null) {
-            return bestNormalDirection;
+        if (hasAttackPower && alreadyCutWithAttackItem) {
+            return decideCarefulAfterCutDirection(field, mySnake, myHead, trueDir, ownBody, enemyBodies, badApples);
         }
 
-        // 2. Wenn normal nichts geht, dann durch Wand
-        if (bestWallDirection != null) {
-            return bestWallDirection;
+        if (hasAttackPower) {
+            return decideAttackDirection(field, myHead, trueDir, ownBody, enemyBodies, badApples);
         }
 
-        // 3. ABSOLUTER NOTFALL:
-        // Bad Apple nur nehmen, wenn sonst keine sichere Richtung existiert.
-        if (emergencyBadAppleDirection != null) {
-            System.out.println("NOTFALL: Bad Apple wird genommen!");
-            return emergencyBadAppleDirection;
+        return decideNormalDirection(field, mySnake, myHead, trueDir, badApples);
+    }
+
+    private void executeAutomaticInventoryManagement(Snake mySnake, Position myHead, GameField field, Set<Position> blocked) {
+        if (mySnake.inventory() == null || mySnake.inventory().isEmpty()) return;
+
+        int openSpace = countFreeFields(myHead, blocked, field.size());
+        
+        // Much more aggressive InstantStack burning if local freedom drops below size safety threshold
+        if (openSpace < mySnake.body().size() * 1.5 || openSpace < 15) {
+            String stackItem = findItemByKeyword(mySnake, "stack");
+            if (stackItem == null) stackItem = findItemByKeyword(mySnake, "instant");
+            
+            if (stackItem != null && activateItemByName(stackItem)) {
+                System.out.println("💥 EMERGENCY: InstantStack deployed to break free from potential enclosure!");
+                return;
+            }
         }
 
-        // 4. Letzter Notfall
-        return currentDirection;
+        String boostItem = findItemByKeyword(mySnake, "speed");
+        if (boostItem == null) boostItem = findItemByKeyword(mySnake, "boost");
+        
+        if (boostItem != null) {
+            for (Map.Entry<String, Snake> e : field.snakesPerTeamName().entrySet()) {
+                if (e.getKey().equals(teamName)) continue;
+                Snake enemy = e.getValue();
+                if (!enemy.alive() || enemy.body() == null || enemy.body().isEmpty()) continue;
+
+                Position enemyHead = enemy.body().get(0);
+                int dist = distance(myHead, enemyHead, field.size());
+                if (dist > 0 && dist <= 4) {
+                    if (activateItemByName(boostItem)) {
+                        System.out.println("🚀 VELOCITY ENGAGED: SpeedBoost burnt to out-maneuver open-ended zones.");
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    private String findItemByKeyword(Snake mySnake, String keyword) {
+        for (String item : mySnake.inventory()) {
+            if (item != null && item.toLowerCase().contains(keyword.toLowerCase())) {
+                return item;
+            }
+        }
+        return null;
+    }
+
+    private Direction prepareAttackItemAndGoStraightIfEnemyInFront(
+            Snake mySnake, GameField field, Position myHead, Direction trueDir,
+            Set<Position> ownBody, Set<Position> enemyBodies, Set<Position> badApples
+    ) {
+        Position front = wrap(move(myHead, trueDir), field.size());
+        if (badApples.contains(front)) return null;
+
+        boolean isEnemy = enemyBodies.contains(front);
+        boolean isOwnBody = ownBody.contains(front);
+
+        if (!isEnemy && !isOwnBody) return null;
+
+        String sword = findItemNameInInventory(mySnake, true);
+        if (sword != null && activateItemByName(sword)) {
+            attackPreparedForNextTick = true;
+            return trueDir;
+        }
+
+        String star = findItemNameInInventory(mySnake, false);
+        if (star != null && activateItemByName(star)) {
+            attackPreparedForNextTick = true;
+            return trueDir;
+        }
+
+        return null;
+    }
+
+    private Direction decideAttackDirection(
+            GameField field, Position myHead, Direction trueDir,
+            Set<Position> ownBody, Set<Position> enemyBodies, Set<Position> badApples
+    ) {
+        Direction bestDirection = null;
+        int bestScore = Integer.MIN_VALUE;
+        Direction emergencyOwnBodyCut = null;
+        Direction emergencyBadApple = null;
+
+        Set<Position> enemyHeads = new HashSet<>();
+        for (Map.Entry<String, Snake> e : field.snakesPerTeamName().entrySet()) {
+            if (e.getKey().equals(teamName)) continue;
+            Snake enemy = e.getValue();
+            if (enemy.alive() && enemy.body() != null && !enemy.body().isEmpty()) {
+                enemyHeads.add(enemy.body().get(0));
+            }
+        }
+
+        for (Direction dir : Direction.values()) {
+            if (isOpposite(trueDir, dir)) continue;
+            Position next = wrap(move(myHead, dir), field.size());
+
+            if (badApples.contains(next)) {
+                if (emergencyBadApple == null) emergencyBadApple = dir;
+                continue;
+            }
+
+            if (enemyHeads.contains(next)) {
+                alreadyCutWithAttackItem = true;
+                return dir;
+            } else if (enemyBodies.contains(next)) {
+                alreadyCutWithAttackItem = true;
+                return dir;
+            } else if (ownBody.contains(next)) {
+                if (emergencyOwnBodyCut == null) emergencyOwnBodyCut = dir;
+                continue;
+            }
+
+            int score = scoreTowardsEnemy(next, enemyBodies, field.size());
+            if (dir == trueDir) score += 5;
+
+            if (score > bestScore) {
+                bestScore = score;
+                bestDirection = dir;
+            }
+        }
+
+        if (bestDirection != null) return bestDirection;
+        if (emergencyBadApple != null) return emergencyBadApple;
+        if (emergencyOwnBodyCut != null) {
+            alreadyCutWithAttackItem = true;
+            return emergencyOwnBodyCut;
+        }
+
+        return trueDir;
+    }
+
+    private Direction decideCarefulAfterCutDirection(
+            GameField field, Snake mySnake, Position myHead, Direction trueDir,
+            Set<Position> ownBody, Set<Position> enemyBodies, Set<Position> badApples
+    ) {
+        int mySize = mySnake.body().size();
+        Set<Position> blocked = new HashSet<>();
+        blocked.addAll(ownBody);
+        blocked.addAll(enemyBodies);
+
+        Set<Position> lethalHeadZone = new HashSet<>();
+        for (Map.Entry<String, Snake> e : field.snakesPerTeamName().entrySet()) {
+            if (e.getKey().equals(teamName)) continue;
+            Snake enemy = e.getValue();
+            if (!enemy.alive() || enemy.body() == null || enemy.body().isEmpty()) continue;
+
+            Position enemyHead = enemy.body().get(0);
+            for (Direction d : Direction.values()) {
+                Position p = wrap(move(enemyHead, d), field.size());
+                if (enemy.body().size() >= mySize) {
+                    lethalHeadZone.add(p);
+                }
+            }
+        }
+
+        Direction bestDirection = null;
+        int bestScore = Integer.MIN_VALUE;
+        Direction fallback = null;
+
+        for (Direction dir : Direction.values()) {
+            if (isOpposite(trueDir, dir)) continue;
+            Position next = wrap(move(myHead, dir), field.size());
+
+            if (blocked.contains(next) || badApples.contains(next)) continue;
+            if (fallback == null) fallback = dir;
+            if (lethalHeadZone.contains(next)) continue;
+
+            Set<Position> floodBlocked = new HashSet<>();
+            floodBlocked.addAll(blocked);
+            floodBlocked.addAll(badApples);
+            floodBlocked.addAll(lethalHeadZone);
+
+            int space = countFreeFields(next, floodBlocked, field.size());
+            int score = space * 150;
+
+            // Heavily penalize tight pockets
+            if (space < mySize * 1.5) score -= 15000;
+            if (dir == trueDir) score += 10;
+
+            if (score > bestScore) {
+                bestScore = score;
+                bestDirection = dir;
+            }
+        }
+
+        return (bestDirection != null) ? bestDirection : (fallback != null) ? fallback : trueDir;
+    }
+
+    private Direction decideNormalDirection(
+            GameField field, Snake mySnake, Position myHead, Direction trueDir, Set<Position> badApples
+    ) {
+        int mySize = mySnake.body().size();
+        Set<Position> blocked = getBlockedPositions(field);
+
+        Set<Position> lethalHeadZone = new HashSet<>();
+        Set<Position> weakHeadZone = new HashSet<>();
+
+        for (Map.Entry<String, Snake> e : field.snakesPerTeamName().entrySet()) {
+            if (e.getKey().equals(teamName)) continue;
+            Snake enemy = e.getValue();
+            if (!enemy.alive() || enemy.body() == null || enemy.body().isEmpty()) continue;
+
+            Position enemyHead = enemy.body().get(0);
+            for (Direction d : Direction.values()) {
+                Position p = wrap(move(enemyHead, d), field.size());
+                if (enemy.body().size() >= mySize) {
+                    lethalHeadZone.add(p);
+                } else {
+                    weakHeadZone.add(p);
+                }
+            }
+        }
+
+        Item targetAttackItem = findNearestSwordFirstThenStar(myHead, field.items(), field.size());
+        Item targetApple = (!wantsBadApple) ? findNearestGoodApple(myHead, field.items(), field.size()) : null;
+
+        Direction bestSafe = null;
+        int bestSafeScore = Integer.MIN_VALUE;
+
+        Direction fallbackBadApple = null;
+        Direction fallbackLethal = null;
+        Direction fallbackAny = null;
+
+        for (Direction dir : Direction.values()) {
+            if (isOpposite(trueDir, dir)) continue;
+            Position next = wrap(move(myHead, dir), field.size());
+
+            if (blocked.contains(next)) continue;
+            if (fallbackAny == null) fallbackAny = dir;
+            if (lethalHeadZone.contains(next)) {
+                if (fallbackLethal == null) fallbackLethal = dir;
+                continue;
+            }
+
+            if (badApples.contains(next)) {
+                if (fallbackBadApple == null) fallbackBadApple = dir;
+                continue;
+            }
+
+            Set<Position> floodBlocked = new HashSet<>();
+            floodBlocked.addAll(blocked);
+            floodBlocked.addAll(lethalHeadZone);
+            floodBlocked.addAll(badApples);
+
+            // Compute exact free fields
+            int space = countFreeFields(next, floodBlocked, field.size());
+            
+            // NEW: Calculate regional congestion index (how many blocked objects in a 5x5 window)
+            int congestion = calculateRegionalCongestion(next, floodBlocked, field.size());
+
+            // Strategy Base Score Configuration
+            int score = space * 200;
+            score -= congestion * 350; // Heavy penalty for high-density cluster pockets!
+
+            // Enclosure avoidance check
+            if (space < mySize * 1.5) {
+                score -= 40000; // Ultra high penalty to reject boxed in domains completely
+            }
+
+            if (targetAttackItem != null) {
+                int distItem = distance(next, targetAttackItem.position(), field.size());
+                if (isSwordItem(targetAttackItem)) {
+                    score += 2500 - distItem * 250;
+                    if (distItem == 0) score += 12000;
+                } else {
+                    score += 1200 - distItem * 150;
+                    if (distItem == 0) score += 7000;
+                }
+            }
+
+            if (targetApple != null) {
+                int distApple = distance(next, targetApple.position(), field.size());
+                score += 150 - distApple * 15;
+                if (distApple == 0) score += 1000;
+            }
+
+            if (weakHeadZone.contains(next)) score += 300;
+            if (dir == trueDir) score += 25; // Slight forward momentum preference
+
+            if (score > bestSafeScore) {
+                bestSafeScore = score;
+                bestSafe = dir;
+            }
+        }
+
+        if (bestSafe != null) return bestSafe;
+        if (fallbackBadApple != null) return fallbackBadApple;
+        if (fallbackLethal != null) return fallbackLethal;
+        
+        return (fallbackAny != null) ? fallbackAny : trueDir;
+    }
+
+    private int calculateRegionalCongestion(Position target, Set<Position> blocked, Size size) {
+        int count = 0;
+        // Scan a 5x5 perimeter centered over the destination position
+        for (int dx = -2; dx <= 2; dx++) {
+            for (int dy = -2; dy <= 2; dy++) {
+                Position checkPos = wrap(new Position(target.x() + dx, target.y() + dy), size);
+                if (blocked.contains(checkPos)) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+
+    private int scoreTowardsEnemy(Position next, Set<Position> enemyBodies, Size size) {
+        int bestDistance = Integer.MAX_VALUE;
+        for (Position enemyPart : enemyBodies) {
+            int dist = distance(next, enemyPart, size);
+            if (dist < bestDistance) bestDistance = dist;
+        }
+
+        if (bestDistance == Integer.MAX_VALUE) return 0;
+        if (bestDistance == 0) return 1_000_000;
+        if (bestDistance == 1) return 500_000;
+        if (bestDistance == 2) return 200_000;
+        return 10_000 - bestDistance * 500;
+    }
+
+    private boolean activateItemByName(String item) {
+        try {
+            api.activateItem(item);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    private String findItemNameInInventory(Snake mySnake, boolean swordOnly) {
+        if (mySnake.inventory() == null) return null;
+        for (String item : mySnake.inventory()) {
+            if (item == null) continue;
+            if (swordOnly && isSwordName(item)) return item;
+            if (!swordOnly && isStarName(item)) return item;
+        }
+        return null;
+    }
+
+    private boolean isAttackItemName(String name) {
+        return isSwordName(name) || isStarName(name);
+    }
+
+    private boolean isSwordName(String name) {
+        return name != null && name.toLowerCase().contains("sword");
+    }
+
+    private boolean isSwordItem(Item item) {
+        return item != null && item.type() != null && isSwordName(item.type());
+    }
+
+    private boolean isStarName(String name) {
+        if (name == null) return false;
+        String t = name.toLowerCase();
+        return t.contains("star") || t.contains("stern") || t.contains("invincible");
+    }
+
+    private Set<Position> getOwnBodyPositions(Snake mySnake) {
+        Set<Position> own = new HashSet<>();
+        if (mySnake.body() != null) own.addAll(mySnake.body());
+        return own;
+    }
+
+    private Set<Position> getEnemyBodyPositions(GameField field) {
+        Set<Position> enemy = new HashSet<>();
+        for (Map.Entry<String, Snake> e : field.snakesPerTeamName().entrySet()) {
+            if (e.getKey().equals(teamName)) continue;
+            Snake snake = e.getValue();
+            if (snake.body() != null) enemy.addAll(snake.body());
+        }
+        return enemy;
     }
 
     private Set<Position> getBlockedPositions(GameField field) {
         Set<Position> blocked = new HashSet<>();
+        for (Map.Entry<String, Snake> e : field.snakesPerTeamName().entrySet()) {
+            Snake snake = e.getValue();
+            if (snake.body() == null || snake.body().isEmpty()) continue;
 
-        for (Snake snake : field.snakesPerTeamName().values()) {
-            if (snake.body() == null) {
-                continue;
+            List<Position> body = snake.body();
+            int limit = e.getKey().equals(teamName) ? body.size() - 1 : body.size();
+
+            for (int i = 0; i < limit; i++) {
+                blocked.add(body.get(i));
             }
-
-            // Alle Schlangen blockieren, auch tote Schlangen/Leichen
-            blocked.addAll(snake.body());
         }
-
         return blocked;
     }
 
     private Set<Position> getBadApplePositions(List<Item> items) {
-        Set<Position> badApples = new HashSet<>();
-
-        if (items == null) {
-            return badApples;
-        }
-
+        Set<Position> bad = new HashSet<>();
+        if (items == null) return bad;
         for (Item item : items) {
-            if (isBadApple(item)) {
-                badApples.add(item.position());
+            if (item != null && item.type() != null && item.type().toLowerCase().contains("bad")) {
+                bad.add(item.position());
             }
         }
-
-        return badApples;
+        return bad;
     }
 
-    private boolean isBadApple(Item item) {
-        if (item == null || item.type() == null) {
-            return false;
-        }
-
-        String type = item.type().toLowerCase();
-
-        return type.contains("bad");
-    }
-
-    private Item findNearestGoodItem(Position myHead, List<Item> items) {
-        if (items == null || items.isEmpty()) {
-            return null;
-        }
-
+    private Item findNearestGoodApple(Position head, List<Item> items, Size size) {
+        if (items == null) return null;
         Item nearest = null;
-        int bestDistance = Integer.MAX_VALUE;
+        int best = Integer.MAX_VALUE;
 
         for (Item item : items) {
-            if (isBadApple(item)) {
-                continue;
-            }
+            if (item == null || item.type() == null) continue;
+            String t = item.type().toLowerCase();
+            if (t.contains("bad") || isAttackItemName(t)) continue;
 
-            int itemDistance = distance(myHead, item.position());
-
-            if (itemDistance < bestDistance) {
-                bestDistance = itemDistance;
-                nearest = item;
+            if (t.contains("apple") || t.contains("boost") || t.contains("stack") || t.contains("speed")) {
+                int d = distance(head, item.position(), size);
+                if (d < best) {
+                    best = d;
+                    nearest = item;
+                }
             }
         }
-
         return nearest;
     }
 
-    private int badAppleDangerScore(Position nextPosition, Set<Position> badApplePositions, Size size) {
-        int danger = 0;
-
-        for (Position badApple : badApplePositions) {
-            int distanceToBadApple = distanceWithWall(nextPosition, badApple, size);
-
-            if (distanceToBadApple == 0) {
-                danger += 1000;
-            } else if (distanceToBadApple == 1) {
-                danger += 5;
-            }
-        }
-
-        return danger;
+    private Item findNearestSwordFirstThenStar(Position head, List<Item> items, Size size) {
+        Item sword = findNearestSpecificAttackItem(head, items, size, true);
+        if (sword != null) return sword;
+        return findNearestSpecificAttackItem(head, items, size, false);
     }
 
-    private int enemyDangerScore(Position nextPosition, Map<String, Snake> snakes, Size size, int myLength) {
-        int danger = 0;
+    private Item findNearestSpecificAttackItem(Position head, List<Item> items, Size size, boolean swordOnly) {
+        if (items == null) return null;
+        Item nearest = null;
+        int best = Integer.MAX_VALUE;
 
-        for (Map.Entry<String, Snake> entry : snakes.entrySet()) {
+        for (Item item : items) {
+            if (item == null || item.type() == null) continue;
+            if (swordOnly && !isSwordName(item.type())) continue;
+            if (!swordOnly && !isStarName(item.type())) continue;
 
-            if (entry.getKey().equals(teamName)) {
-                continue;
-            }
-
-            Snake enemySnake = entry.getValue();
-
-            if (!enemySnake.alive()) {
-                continue;
-            }
-
-            if (enemySnake.body() == null || enemySnake.body().isEmpty()) {
-                continue;
-            }
-
-            Position enemyHead = enemySnake.body().get(0);
-            int distanceToEnemyHead = distanceWithWall(nextPosition, enemyHead, size);
-
-            int enemyLength = enemySnake.body().size();
-
-            if (distanceToEnemyHead == 0) {
-                danger += 1000;
-            } else if (distanceToEnemyHead == 1) {
-                if (enemyLength >= myLength) {
-                    danger += 30;
-                } else {
-                    danger += 10;
-                }
-            } else if (distanceToEnemyHead == 2) {
-                danger += 5;
+            int d = distance(head, item.position(), size);
+            if (d < best) {
+                best = d;
+                nearest = item;
             }
         }
-
-        return danger;
+        return nearest;
     }
 
-    private int countReachableFreeFields(Position start, Set<Position> blockedPositions, Size size) {
+    private int countFreeFields(Position start, Set<Position> blocked, Size size) {
         Set<Position> visited = new HashSet<>();
         Queue<Position> queue = new LinkedList<>();
 
         queue.add(start);
         visited.add(start);
 
-        while (!queue.isEmpty()) {
-            Position current = queue.poll();
+        // Max lookahead cutoff to measure true paths rather than huge dead-ends
+        int searchLimit = 250; 
+        int counted = 0;
 
-            for (Direction direction : Direction.values()) {
-                Position rawNext = moveWithoutWall(current, direction);
-                Position next = wrapPosition(rawNext, size);
-
-                if (visited.contains(next)) {
-                    continue;
+        while (!queue.isEmpty() && counted < searchLimit) {
+            Position cur = queue.poll();
+            counted++;
+            for (Direction d : Direction.values()) {
+                Position next = wrap(move(cur, d), size);
+                if (!visited.contains(next) && !blocked.contains(next)) {
+                    visited.add(next);
+                    queue.add(next);
                 }
-
-                if (blockedPositions.contains(next)) {
-                    continue;
-                }
-
-                visited.add(next);
-                queue.add(next);
             }
         }
-
         return visited.size();
     }
 
-    private Position moveWithoutWall(Position position, Direction direction) {
-        return switch (direction) {
-            case NORTH -> new Position(position.x(), position.y() - 1);
-            case SOUTH -> new Position(position.x(), position.y() + 1);
-            case EAST -> new Position(position.x() + 1, position.y());
-            case WEST -> new Position(position.x() - 1, position.y());
+    private Direction getTrueDirection(Snake snake, Size fieldSize) {
+        if (snake.body() == null || snake.body().size() < 2) return Direction.EAST;
+        Position head = snake.body().get(0);
+        Position neck = snake.body().get(1);
+
+        int dx = head.x() - neck.x();
+        int dy = head.y() - neck.y();
+
+        if (dx > fieldSize.width() / 2) dx -= fieldSize.width();
+        if (dx < -fieldSize.width() / 2) dx += fieldSize.width();
+        if (dy > fieldSize.height() / 2) dy -= fieldSize.height();
+        if (dy < -fieldSize.height() / 2) dy += fieldSize.height();
+
+        if (dx == 1) return Direction.EAST;
+        if (dx == -1) return Direction.WEST;
+        if (dy == 1) return Direction.SOUTH;
+        if (dy == -1) return Direction.NORTH;
+        return Direction.EAST;
+    }
+
+    private Position move(Position p, Direction d) {
+        return switch (d) {
+            case NORTH -> new Position(p.x(), p.y() - 1);
+            case SOUTH -> new Position(p.x(), p.y() + 1);
+            case EAST -> new Position(p.x() + 1, p.y());
+            case WEST -> new Position(p.x() - 1, p.y());
         };
     }
 
-    private Position wrapPosition(Position position, Size size) {
-        int x = position.x();
-        int y = position.y();
-
-        if (x < 0) {
-            x = size.width() - 1;
-        } else if (x >= size.width()) {
-            x = 0;
-        }
-
-        if (y < 0) {
-            y = size.height() - 1;
-        } else if (y >= size.height()) {
-            y = 0;
-        }
-
+    private Position wrap(Position p, Size s) {
+        int x = p.x(); int y = p.y();
+        if (x < 0) x = s.width() - 1; else if (x >= s.width()) x = 0;
+        if (y < 0) y = s.height() - 1; else if (y >= s.height()) y = 0;
         return new Position(x, y);
     }
 
-    private boolean isInsideField(Position position, Size size) {
-        return position.x() >= 0
-                && position.y() >= 0
-                && position.x() < size.width()
-                && position.y() < size.height();
+    private boolean isOpposite(Direction a, Direction b) {
+        return (a == Direction.NORTH && b == Direction.SOUTH)
+                || (a == Direction.SOUTH && b == Direction.NORTH)
+                || (a == Direction.EAST && b == Direction.WEST)
+                || (a == Direction.WEST && b == Direction.EAST);
     }
 
-    private boolean isOpposite(Direction currentDirection, Direction newDirection) {
-        return (currentDirection == Direction.NORTH && newDirection == Direction.SOUTH)
-                || (currentDirection == Direction.SOUTH && newDirection == Direction.NORTH)
-                || (currentDirection == Direction.EAST && newDirection == Direction.WEST)
-                || (currentDirection == Direction.WEST && newDirection == Direction.EAST);
-    }
-
-    private int distance(Position a, Position b) {
-        return Math.abs(a.x() - b.x()) + Math.abs(a.y() - b.y());
-    }
-
-    private int distanceWithWall(Position a, Position b, Size size) {
-        int normalX = Math.abs(a.x() - b.x());
-        int normalY = Math.abs(a.y() - b.y());
-
-        int wrappedX = size.width() - normalX;
-        int wrappedY = size.height() - normalY;
-
-        int bestX = Math.min(normalX, wrappedX);
-        int bestY = Math.min(normalY, wrappedY);
-
-        return bestX + bestY;
+    private int distance(Position a, Position b, Size s) {
+        int dx = Math.abs(a.x() - b.x());
+        int dy = Math.abs(a.y() - b.y());
+        return Math.min(dx, s.width() - dx) + Math.min(dy, s.height() - dy);
     }
 
     public static void main(String[] args) {
         if (args.length < 2) {
             System.out.println("Usage: java Client <team_name> <game_name> [password] [server_url]");
-            System.out.println("Example: java Client team1 default secret http://localhost:3030");
             return;
         }
 
@@ -403,7 +647,6 @@ class Client {
         String password = args.length > 2 ? args[2] : "test";
         String serverUrl = args.length > 3 ? args[3] : "http://localhost:3030";
 
-        Client client = new Client(serverUrl, teamName, gameName, password);
-        client.run();
+        new Client(serverUrl, teamName, gameName, password).run();
     }
 }

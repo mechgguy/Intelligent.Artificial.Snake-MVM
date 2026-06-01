@@ -50,7 +50,7 @@ def find_bfs_move(my_head, dangerous_cells, grid_size, target_apples):
 def count_reachable_space(start_pos, dangerous_cells, grid_size, max_depth=40):
     """
     Optimized Flood Fill lookahead. 
-    Pre-seeded with dangerous cells for high-speed calculation to avoid server timeout.
+    Reduced max_depth from 120 to 40 to prevent computation time outs at large sizes.
     """
     width, height = grid_size
     directions = ["NORTH", "SOUTH", "EAST", "WEST"]
@@ -90,6 +90,8 @@ if __name__ == "__main__":
     currentDirection: Direction = "EAST"
     api = SnakeFieldAPI(base_url, team_name, game_name, password)
 
+    api.set_direction(currentDirection)
+
     print(f"Connecting dynamic bot '{team_name}' to lobby '{game_name}'...")
 
     while True:
@@ -123,23 +125,20 @@ if __name__ == "__main__":
             grid_size = field.size
             directions_list = ["NORTH", "SOUTH", "EAST", "WEST"]
 
-            # 2. PERMANENT INDESTRUCTIBLE OBSTACLE CAPTURE
-            permanent_obstacles = set()
+            # 2. OBJECT MATRIX MAPPING
+            dangerous_cells = set()
             
-            # Hard-lock ALL snake coordinates on the field right now (Living and Dead Grey remains)
+            # Rule A: Treat ALL snake bodies (alive and dead greyed-out segments) as solid walls
             for s_name, s_info in field.snakes.items():
                 for block in s_info.body:
-                    permanent_obstacles.add(block)
+                    dangerous_cells.add(block)
 
-            # Initialize our active danger grid with these permanent physical boundaries
-            dangerous_cells = set(permanent_obstacles)
-
-            # Rule B: Bad apples shrink us. If length == 1, eating one causes instant death!
+            # Rule B: Bad apples shrink us. If length == 1, eating one causes an instant crash!
             if current_length == 1:
                 for bad_apple in field.bad_apples:
                     dangerous_cells.add(bad_apple)
 
-            # Rule C: ACTIVE HEAD-ON COLLISION DEFENSE
+            # Rule C: HEAD-ON COLLISION DEFENSE
             # Block positions that an enemy head can reach on the exact same frame
             for s_name, s_info in field.snakes.items():
                 if s_name != my_found_key and s_info.alive:
@@ -160,11 +159,14 @@ if __name__ == "__main__":
                 if next_pos not in dangerous_cells:
                     safe_moves.append(move)
 
-            # --- GUARANTEED PANIC LAYER ---
-            # If predictive head bubbles completely trap us, clear predictions.
-            # Physical boundaries (ALL snake bodies & lethal bad items) are safely restored from snapshots.
+            # --- PANIC LAYER ---
+            # If enemy head predictions box us in entirely, drop predictions.
+            # Physical boundaries (raw bodies & lethal items) are strictly preserved!
             if not safe_moves:
-                dangerous_cells = set(permanent_obstacles)
+                dangerous_cells.clear()
+                for s_name, s_info in field.snakes.items():
+                    for block in s_info.body:
+                        dangerous_cells.add(block)
                 if current_length == 1:
                     for bad_apple in field.bad_apples:
                         dangerous_cells.add(bad_apple)
@@ -215,7 +217,7 @@ if __name__ == "__main__":
                         if not chosen_move and bad_apples:
                             chosen_move = find_bfs_move(my_head, dangerous_cells, grid_size, bad_apples)
                 else:
-                    print(f"[SURVIVAL MODE] Optimized space loop tracking at size {current_length}.")
+                    print(f"[SURVIVAL MODE] Fast space loop optimization at size {current_length}.")
 
             # 5. Flood Fill Space Fallback Evaluation
             if not chosen_move and safe_moves:
@@ -245,7 +247,7 @@ if __name__ == "__main__":
 
             api.set_direction(currentDirection)
             
-            # Dynamic sleep to keep pace perfectly balanced with the server tick cycle
+            # Dynamic sleep to adapt perfectly to server time budget
             elapsed = time.time() - start_tick_time
             sleep_time = max(0.05, 0.4 - elapsed)
             time.sleep(sleep_time)
